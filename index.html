@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the latest trends in fashion for women and men at Crptd.Fts. Shop our wide selection of clothes, bags, jewelry, and more. Elevate your style with our curated collections.">
+    <meta name="keywords" content="clothes, women, men, fashion, bags, jewelry, Crptd.Fts, latest trends, stylish clothing, accessories">
+    <meta name="author" content="Crptd.Fts">
+    <link rel="icon" href="images/logowhite.jpg?v=2" type="image/jpeg">
+    <!-- css -->
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/main.css">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:wght@600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Crptd.Fts</title>
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <span><ion-icon name="sparkles-outline"></ion-icon> Free Shipping on Orders Over $49</span>
+            <span class="divider">|</span>
+            <span><ion-icon name="refresh-circle-outline"></ion-icon> 30-Day Easy Returns</span>
+            <span class="divider">|</span>
+            <span><ion-icon name="shield-checkmark-outline"></ion-icon> 100% Secure Payments</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="container" id="header">
+        <div class="header_top">
+            <div class="brand-area">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo_block.jpg" alt="page logo" id="logo">
+                </a>
+                <div class="header_social">
+                    <a href="https://www.instagram.com/crptd.fts?rpxt=c3dueGY3NHU0dGVq" target="_blank" rel="noopener noreferrer" title="Instagram">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Glass Search Bar -->
+            <div class="header_search">
+                <input type="text" placeholder="Search products, brands and more..." id="globalSearchInput">
+                <button type="button" class="search-btn" onclick="window.location.href='products.html'">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+
+            <div class="header_actions">
+                <div id="display_login">
+                    <a href="#" id="logout" onclick="logout();">
+                        <span id="signout">Sign Out</span>
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </a>
+                </div>
+                <a href="login.html" title="Account" id="login_btn" class="action-item">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <span class="action-label">Account</span>
+                </a>
+                <a href="products.html" title="Wishlist" class="action-item wishlist-trigger">
+                    <div class="icon-badge-wrap">
+                        <ion-icon name="heart-outline"></ion-icon>
+                        <span class="badge-dot">3</span>
+                    </div>
+                    <span class="action-label">Wishlist</span>
+                </a>
+                <a href="#" class="icon-cart action-item">
+                    <div class="icon-badge-wrap">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <span id="cart-counter">0</span>
+                    </div>
+                    <span class="action-label">Cart</span>
+                </a>
+            </div>
+        </div>
+
+        <nav id="navbar">
+            <div class="nav-wrapper">
+                <a href="products.html" class="all-categories-btn">
+                    <ion-icon name="menu-outline"></ion-icon>
+                    <span>All Categories</span>
+                </a>
+                <menu>
+                    <ul>
+                        <li><a href="index.html" class="active-nav">Home</a></li>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="#trending-section">Deals</a></li>
+                        <li><a href="#collection">New Arrivals</a></li>
+                        <li><a href="#reviews-section">Reviews</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </menu>
+            </div>
+        </nav>
+    </header>
+
+    <button id="scrollBtn" title="Back to top"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
+
+    <!-- Hero Slider (Rounded Glassmorphic Banner like Reference Image) -->
+    <section class="hero-wrapper">
+        <div class="slider" id="heroSlider">
+            <div class="slides">
+                <div class="slide">
+                    <!-- Slide 1 -->
+                    <div class="slide-content active">
+                        <img src="images/background/slide16_bdfdea89-9df3-48da-9f0a-888fd50a83d5.webp" alt="Elevate Your Everyday">
+                        <div class="sale-ribbon">
+                            <span>SUMMER SALE</span>
+                            <strong>UP TO 40%</strong>
+                            <small>OFF! OFF</small>
+                        </div>
+                        <div class="text glass-panel">
+                            <span class="hero-tag">Curated Collection</span>
+                            <h2>Elevate Your<br>Everyday</h2>
+                            <p>Discover quality products across every category — made for the way you live.</p>
+                            <a href="products.html" class="shop-btn">
+                                <span>Shop Now</span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                            <div class="hero-trust-badges">
+                                <span><ion-icon name="ribbon-outline"></ion-icon> Premium Quality</span>
+                                <span><ion-icon name="pricetag-outline"></ion-icon> Great Prices</span>
+                                <span><ion-icon name="people-outline"></ion-icon> 10K+ Customers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide-content">
+                        <img src="images/background/background2.webp" alt="New Arrivals">
+                        <div class="sale-ribbon">
+                            <span>NEW SEASON</span>
+                            <strong>UP TO 30%</strong>
+                            <small>LIMITED TIME</small>
+                        </div>
+                        <div class="text glass-panel">
+                            <span class="hero-tag">Trending Style</span>
+                            <h2>Get up to 30% Off<br>New Arrivals</h2>
+                            <p>Refresh your wardrobe with handpicked modern essentials and statement pieces.</p>
+                            <a href="products.html" class="shop-btn">
+                                <span>Shop Now</span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                            <div class="hero-trust-badges">
+                                <span><ion-icon name="ribbon-outline"></ion-icon> Authentic Brands</span>
+                                <span><ion-icon name="flash-outline"></ion-icon> Fast Dispatch</span>
+                                <span><ion-icon name="heart-outline"></ion-icon> Top Rated</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide-content">
+                        <img src="images/background/background3.webp" alt="Exclusive Deals">
+                        <div class="sale-ribbon">
+                            <span>FLASH DEAL</span>
+                            <strong>BUY 1 GET 1</strong>
+                            <small>SPECIAL OFFER</small>
+                        </div>
+                        <div class="text glass-panel">
+                            <span class="hero-tag">Exclusive Drop</span>
+                            <h2>Modern Luxury<br>Meets Comfort</h2>
+                            <p>Uncompromising craftsmanship tailored for your daily lifestyle and weekend getaways.</p>
+                            <a href="products.html" class="shop-btn">
+                                <span>Explore Deals</span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                            <div class="hero-trust-badges">
+                                <span><ion-icon name="shield-checkmark-outline"></ion-icon> Verified Secure</span>
+                                <span><ion-icon name="sync-outline"></ion-icon> Easy Exchange</span>
+                                <span><ion-icon name="star-outline"></ion-icon> 4.9/5 Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="prev" onclick="prevSlider();" aria-label="Previous Slide">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="next" onclick="nextSlider();" aria-label="Next Slide">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+            </div>
+
+            <!-- Slider Pagination Dots -->
+            <div class="slider-dots" id="sliderDots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Hero Banner -->
+    <div class="hero_for_phone">
+        <div class="hero-content">
+            <img src="images/background/phone.webp" alt="Mini Collection">
+            <div class="text glass-panel">
+                <span class="hero-tag">Hot Drop</span>
+                <h2>Mini Collection</h2>
+                <p>Colour the summer in hot fuschia, bubblegum pink & lush emerald.</p>
+                <a href="products.html" class="shop-btn">Shop Now <ion-icon name="arrow-forward-outline"></ion-icon></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Circular Categories Section (Like Reference Image) -->
+    <section class="categories-strip">
+        <div class="categories-container">
+            <a href="products.html" class="category-circle-item">
+                <div class="cat-icon-circle cat-bg-1">
+                    <ion-icon name="laptop-outline"></ion-icon>
+                </div>
+                <span>Electronics</span>
+            </a>
+            <a href="products.html" class="category-circle-item">
+                <div class="cat-icon-circle cat-bg-2">
+                    <ion-icon name="shirt-outline"></ion-icon>
+                </div>
+                <span>Fashion</span>
+            </a>
+            <a href="products.html" class="category-circle-item">
+                <div class="cat-icon-circle cat-bg-3">
+                    <ion-icon name="home-outline"></ion-icon>
+                </div>
+                <span>Home & Living</span>
+            </a>
+            <a href="products.html" class="category-circle-item">
+                <div class="cat-icon-circle cat-bg-4">
+                    <ion-icon name="sparkles-outline"></ion-icon>
+                </div>
+                <span>Beauty</span>
+            </a>
+            <a href="products.html" class="category-circle-item">
+                <div class="cat-icon-circle cat-bg-5">
+                    <ion-icon name="Watch-outline"></ion-icon>
+                </div>
+                <span>Accessories</span>
+            </a>
+            <a href="products.html" class="category-circle-item">
+                <div class="cat-icon-circle cat-bg-6">
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+                </div>
+                <span>Luxury Bags</span>
+            </a>
+            <a href="products.html" class="category-circle-item">
+                <div class="cat-icon-circle cat-bg-7">
+                    <ion-icon name="diamond-outline"></ion-icon>
+                </div>
+                <span>Jewelry</span>
+            </a>
+            <a href="products.html" class="category-circle-item">
+                <div class="cat-icon-circle cat-bg-8">
+                    <ion-icon name="footsteps-outline"></ion-icon>
+                </div>
+                <span>Footwear</span>
+            </a>
+            <a href="products.html" class="category-circle-item">
+                <div class="cat-icon-circle cat-bg-9">
+                    <ion-icon name="grid-outline"></ion-icon>
+                </div>
+                <span>View All</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Slide-Out Glass Shopping Cart -->
+    <div class="cart-section">
+        <div class="cart-header">
+            <h2><ion-icon name="bag-check-outline"></ion-icon> SHOPPING CART</h2>
+            <div class="closeCart">
+                <ion-icon name="close-outline" id="closeCart"></ion-icon>
+            </div>
+        </div>
+        <div class="cart_products">
+            <!-- add cart products in js -->
+        </div>
+        <div class="cart_total">
+            <h3>Total:</h3>
+            <span id="total_price"></span>
+        </div>
+        <div class="btn_control">
+            <button class="viewCart" onclick="viewCart();">View Cart</button>
+            <button class="checkout" onclick="checkOut();">Check Out</button>
+        </div>
+    </div>
+
+    <!-- Top Picks / Trending Products -->
+    <div class="top_products" id="trending-section">
+        <div class="container">
+            <div class="section-title-row">
+                <div class="header">
+                    <h3>Top Picks For You ✨</h3>
+                    <p>Hover over any item to experience our interactive glass preview & instant details.</p>
+                </div>
+                <a href="products.html" class="see-all-link">See All Deals <ion-icon name="arrow-forward-outline"></ion-icon></a>
+            </div>
+            <div class="products">
+                <!-- Dynamically populated by your JS, enhanced automatically with Apple Glass Hover UI -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 Promo Collection Banners (Styled like Reference Image) -->
+    <div class="collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+            <ul class="collection-list">
+                <li>
+                    <div class="collection-card promo-tint-green has-before hover:shine">
+                        <div class="promo-glass-content">
+                            <span class="promo-badge">New Arrivals</span>
+                            <h2 class="card-title">Fresh Styles<br>Just In</h2>
+                            <p class="card-text">Starting at $17.99</p>
+                            <a href="products.html" class="btn-link">
+                                <span>Shop Now</span>
+                                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="has-bg-image" style="background-image: url('images/background/banner1.webp')"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="collection-card promo-tint-warm has-before hover:shine">
+                        <div class="promo-glass-content">
+                            <span class="promo-badge">Season Refresh</span>
+                            <h2 class="card-title">What’s New?<br>Get The Glow</h2>
+                            <p class="card-text">Curated Minimalist Looks</p>
+                            <a href="products.html" class="btn-link">
+                                <span>Discover Now</span>
+                                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="has-bg-image" style="background-image: url('images/background/banner2.webp')"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="collection-card promo-tint-blue has-before hover:shine">
+                        <div class="promo-glass-content">
+                            <span class="promo-badge">Hot Deal</span>
+                            <h2 class="card-title">Upgrade Your<br>Lifestyle</h2>
+                            <p class="card-text">Buy 1 Get 1 Starting at $7.99</p>
+                            <a href="products.html" class="btn-link">
+                                <span>Discover Now</span>
+                                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="has-bg-image" style="background-image: url('images/background/banner3.webp')"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Loved By Thousands (Testimonials Section from Reference Image) -->
+    <section class="testimonials-section" id="reviews-section">
+        <div class="testimonials-container">
+            <div class="testimonials-header">
+                <h3>Loved By Thousands ❤️</h3>
+                <div class="overall-rating">
+                    <span>4.9/5 Average Rating</span>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-glass-card">
+                    <div class="reviewer-top">
+                        <div class="avatar-circle">S</div>
+                        <div>
+                            <h4>Sarah J. <ion-icon name="checkmark-circle"></ion-icon></h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Amazing quality and fast delivery! Crptd.Fts has become my go-to store for everything trendy."</p>
+                </div>
+                <div class="testimonial-glass-card">
+                    <div class="reviewer-top">
+                        <div class="avatar-circle">M</div>
+                        <div>
+                            <h4>Michael T. <ion-icon name="checkmark-circle"></ion-icon></h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Great prices, excellent customer service, and super easy returns. The fit and finish exceeded expectations!"</p>
+                </div>
+                <div class="testimonial-glass-card">
+                    <div class="reviewer-top">
+                        <div class="avatar-circle">P</div>
+                        <div>
+                            <h4>Priya K. <ion-icon name="checkmark-circle"></ion-icon></h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"I love the variety they offer. I can find outfits, bags, and accessories all in one place. So convenient!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter ("Stay in the Loop" Dark Teal Glass Banner) -->
+    <div class="news-wrapper">
+        <div class="news hight">
+            <div class="news-left">
+                <div class="mail-icon-circle">
+                    <ion-icon name="mail-unread-outline"></ion-icon>
+                </div>
+                <div class="news-text">
+                    <h4>Stay in the Loop</h4>
+                    <p>Get exclusive deals, new arrivals, and 20% off your first purchase straight to your inbox.</p>
+                </div>
+            </div>
+            <div class="Subscribe-form-wrap">
+                <div class="Subscribe-form">
+                    <input type="email" name="email" placeholder="Enter your email address" autocomplete="off">
+                    <button type="submit" value="submit">
+                        <span>Subscribe</span>
+                        <img src="images/send.png" alt="send-data" width="18"/>
+                    </button>
+                </div>
+                <small class="privacy-note"><ion-icon name="lock-closed-outline"></ion-icon> We respect your privacy. Unsubscribe anytime.</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trust Information Strip -->
+    <div class="information">
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/global-distribution.png" alt="global-distribution">
+            </div>
+            <div class="info-text">
+                <h3>Free Shipping</h3>
+                <p>On all orders over $49</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/delivery-status.png" alt="delivery-status">
+            </div>
+            <div class="info-text">
+                <h3>Easy Returns</h3>
+                <p>30-day hassle-free return policy</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/check.png" alt="Security">
+            </div>
+            <div class="info-text">
+                <h3>Secure Payments</h3>
+                <p>100% protected checkout</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/24-hours-support.png" alt="24-hours-support">
+            </div>
+            <div class="info-text">
+                <h3>24/7 Support</h3>
+                <p>We're always here to help</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/logo_block.jpg" alt="logo" width="140">
+                <p>Your one-stop destination for quality fashion and lifestyle essentials across every category. Elevate your everyday.</p>
+            </div>
+            <div class="footer-list">
+                <div class="list">
+                    <h4>SHOPPING</h4>
+                    <ul>
+                        <li><a href="products.html">Clothing Store</a></li>
+                        <li><a href="products.html">Trending Shoes</a></li>
+                        <li><a href="products.html">Accessories</a></li>
+                        <li><a href="products.html">Sale & Deals</a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <h4>CUSTOMER SERVICE</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">Delivery & Tracking</a></li>
+                        <li><a href="#">Return & Exchanges</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-company-name">
+                © 2026 All rights reserved. Made with <ion-icon name="heart"></ion-icon>
+                by <a href="https://www.instagram.com/crptd.fts?rpxt=c3dueGY3NHU0dGVq" id="author">Crptd.Fts</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Apple Glass Quick-View Popup Modal -->
+    <div class="glass-quickview-modal" id="quickViewModal">
+        <div class="glass-modal-card">
+            <button class="close-glass-modal" id="closeQuickView"><ion-icon name="close-outline"></ion-icon></button>
+            <div class="glass-modal-body">
+                <div class="glass-modal-img">
+                    <img src="" alt="Product Preview" id="qvImage">
+                    <span class="qv-badge">In Stock & Ready to Ship</span>
+                </div>
+                <div class="glass-modal-info">
+                    <span class="qv-category">Crptd.Fts Exclusive</span>
+                    <h3 id="qvTitle">Product Name</h3>
+                    <div class="qv-rating">★★★★★ <span>(4.9/5 • 120+ Verified Reviews)</span></div>
+                    <div class="qv-price-wrap">
+                        <span id="qvPrice" class="qv-price">$0.00</span>
+                        <span class="qv-old-price" id="qvOldPrice">$0.00</span>
+                    </div>
+                    <p class="qv-desc">Crafted with premium materials for standout everyday comfort and durability. Includes free express shipping on eligible orders and a 30-day effortless exchange guarantee.</p>
+                    <div class="qv-specs">
+                        <div><ion-icon name="sparkles-outline"></ion-icon> Premium Grade</div>
+                        <div><ion-icon name="shield-checkmark-outline"></ion-icon> Quality Assured</div>
+                    </div>
+                    <button class="qv-action-btn" id="qvAddBtn">
+                        <ion-icon name="bag-add-outline"></ion-icon> Add to Bag / View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JavaScript/index.js"></script>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/cart.js"></script>
+
+    <!-- Interactive Apple Glass UI & Auto-Slider Enhancement Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // 1. Automatic Glassmorphic Hero Slider + Dots Sync
+            const slides = document.querySelectorAll('.slider .slide-content');
+            const dots = document.querySelectorAll('#sliderDots .dot');
+
+            function syncDotsWithActiveSlide() {
+                slides.forEach((s, idx) => {
+                    if (s.classList.contains('active') || s.style.display === 'flex') {
+                        dots.forEach(d => d.classList.remove('active'));
+                        if (dots[idx]) dots[idx].classList.add('active');
+                    }
+                });
+            }
+
+            dots.forEach((dot, idx) => {
+                dot.addEventListener('click', () => {
+                    slides.forEach(s => {
+                        s.classList.remove('active');
+                        s.style.display = 'none';
+                    });
+                    slides[idx].classList.add('active');
+                    slides[idx].style.display = 'flex';
+                    syncDotsWithActiveSlide();
+                });
+            });
+
+            // Auto-advance slider every 5 seconds with smooth glass morph
+            setInterval(() => {
+                if (typeof nextSlider === 'function') {
+                    nextSlider();
+                    setTimeout(syncDotsWithActiveSlide, 60);
+                } else if (slides.length > 0) {
+                    let current = Array.from(slides).findIndex(s => s.classList.contains('active'));
+                    if (current === -1) current = 0;
+                    slides[current].classList.remove('active');
+                    slides[current].style.display = 'none';
+                    let next = (current + 1) % slides.length;
+                    slides[next].classList.add('active');
+                    slides[next].style.display = 'flex';
+                    syncDotsWithActiveSlide();
+                }
+            }, 5000);
+
+            // 2. Automatically Upgrade Dynamically Injected Product Cards with Apple Liquid Glass Hover
+            const qvModal = document.getElementById('quickViewModal');
+            const qvClose = document.getElementById('closeQuickView');
+            const qvImg = document.getElementById('qvImage');
+            const qvTitle = document.getElementById('qvTitle');
+            const qvPrice = document.getElementById('qvPrice');
+            const qvOldPrice = document.getElementById('qvOldPrice');
+            const qvAddBtn = document.getElementById('qvAddBtn');
+
+            if (qvClose) {
+                qvClose.addEventListener('click', () => qvModal.classList.remove('open'));
+                qvModal.addEventListener('click', (e) => {
+                    if (e.target === qvModal) qvModal.classList.remove('open');
+                });
+            }
+
+            function enhanceProductCards() {
+                const cards = document.querySelectorAll('.product-card:not(.glass-upgraded)');
+                const discountTags = ['-20%', '-25%', '-15%', '-30%', 'HOT'];
+
+                cards.forEach((card, index) => {
+                    card.classList.add('glass-upgraded');
+                    const cardImg = card.querySelector('.card-img');
+                    const mainImg = cardImg ? cardImg.querySelector('img') : null;
+                    const nameEl = card.querySelector('.product-name');
+                    const priceEl = card.querySelector('.product-price');
+                    const addBtn = card.querySelector('.addToCart');
+
+                    if (cardImg && mainImg) {
+                        const titleText = nameEl ? nameEl.textContent.trim() : 'Trending Item';
+                        const priceText = priceEl ? priceEl.textContent.trim() : '$29.99';
+                        const numPrice = parseFloat(priceText.replace(/[^0-9.]/g, '')) || 29.99;
+                        const oldPriceVal = '$' + (numPrice * 1.25).toFixed(2);
+                        const discount = discountTags[index % discountTags.length];
+
+                        // Secondary zoomed/alt image layer for the "glass melt" transition
+                        const meltImg = mainImg.cloneNode(true);
+                        meltImg.classList.add('melt-secondary-img');
+                        cardImg.appendChild(meltImg);
+
+                        // Discount Pill Badge (Top Left like Reference Image)
+                        const badge = document.createElement('span');
+                        badge.className = 'discount-pill';
+                        badge.textContent = discount;
+                        cardImg.appendChild(badge);
+
+                        // Quick View Eye Button
+                        const qvBtn = document.createElement('button');
+                        qvBtn.className = 'quick-view-trigger';
+                        qvBtn.title = 'Quick Glass Preview';
+                        qvBtn.innerHTML = '<ion-icon name="eye-outline"></ion-icon>';
+                        qvBtn.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            if (qvModal) {
+                                qvImg.src = mainImg.src;
+                                qvTitle.textContent = titleText;
+                                qvPrice.textContent = priceText;
+                                qvOldPrice.textContent = oldPriceVal;
+                                qvAddBtn.onclick = () => {
+                                    if (addBtn) addBtn.click();
+                                    else mainImg.click();
+                                    qvModal.classList.remove('open');
+                                };
+                                qvModal.classList.add('open');
+                            }
+                        });
+                        cardImg.appendChild(qvBtn);
+
+                        // Apple Frosted Glass Hover Drawer inside Image
+                        const glassDrawer = document.createElement('div');
+                        glassDrawer.className = 'apple-glass-drawer';
+                        glassDrawer.innerHTML = `
+                            <div class="glass-drawer-top">
+                                <span class="glass-stars">★★★★★ <small>(${120 + (index * 37) % 800})</small></span>
+                                <span class="glass-stock">In Stock</span>
+                            </div>
+                            <div class="glass-drawer-title">${titleText}</div>
+                            <div class="glass-drawer-price-row">
+                                <div>
+                                    <span class="glass-now-price">${priceText}</span>
+                                    <span class="glass-old-price">${oldPriceVal}</span>
+                                </div>
+                                <span class="glass-tap-hint">Tap to View <ion-icon name="arrow-forward-outline"></ion-icon></span>
+                            </div>
+                        `;
+                        glassDrawer.addEventListener('click', () => mainImg.click());
+                        cardImg.appendChild(glassDrawer);
+
+                        // Also add rating + strikethrough price to bottom card-info to match reference UI
+                        const cardInfo = card.querySelector('.card-info');
+                        if (cardInfo && !cardInfo.querySelector('.card-rating-row')) {
+                            const ratingRow = document.createElement('div');
+                            ratingRow.className = 'card-rating-row';
+                            ratingRow.innerHTML = `<span class="stars-gold">★★★★★</span> <span class="rev-count">(${210 + (index * 53) % 900})</span>`;
+                            cardInfo.insertBefore(ratingRow, priceEl);
+
+                            if (priceEl) {
+                                priceEl.innerHTML = `<strong class="curr-price">${priceText}</strong> <del class="old-price-strike">${oldPriceVal}</del>`;
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Run immediately & observe DOM for async products loaded by index.js / main.js
+            enhanceProductCards();
+            const observer = new MutationObserver(() => enhanceProductCards());
+            const productsContainers = document.querySelectorAll('.products');
+            productsContainers.forEach(container => {
+                observer.observe(container, { childList: true, subtree: true });
+            });
+        });
+    </script>
+    <script src="JavaScript/upiGateway.js"></script>
+</body>
+</html>

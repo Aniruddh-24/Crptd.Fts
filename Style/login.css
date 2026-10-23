@@ -1,0 +1,86 @@
+#login {
+    min-height: calc(100vh - 160px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+#login .container {
+    width: 100%;
+    max-width: 520px;
+    padding: 42px 38px;
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 28px;
+    box-shadow: 0 24px 60px rgba(7, 59, 53, 0.12);
+}
+
+#login .container h1 {
+    font-family: "Playfair Display", Georgia, serif;
+    text-align: center;
+    color: var(--primary-dark-forest);
+}
+
+.section-header {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+#form {
+    margin-top: 26px;
+}
+
+#form label {
+    margin-bottom: 8px;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#form input {
+    height: 52px;
+    width: 100%;
+    padding: 0 20px;
+    border: 1.5px solid rgba(9, 122, 110, 0.2);
+    border-radius: 999px;
+    font-size: 15px;
+    color: var(--text-dark);
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+#form input:focus {
+    outline: 0;
+    border-color: var(--primary-teal);
+    box-shadow: 0 0 0 4px rgba(9, 122, 110, 0.12);
+}
+
+#form .submit {
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+#form .submit button {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: var(--primary-dark-forest);
+    color: white;
+    cursor: pointer;
+    padding: 15px 35px;
+    border-radius: 999px;
+    margin: 10px 0 14px;
+    border: none;
+    box-shadow: 0 12px 24px rgba(7, 59, 53, 0.22);
+    transition: all 0.35s ease;
+}
+
+#form .submit button:hover {
+    background-color: var(--primary-teal);
+    transform: translateY(-2px);
+}

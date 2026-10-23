@@ -1,0 +1,99 @@
+.cart_page .container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 4% 4%;
+}
+
+.cart_page .container h1 {
+    font-family: "Playfair Display", Georgia, serif;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 36px;
+    color: var(--primary-dark-forest);
+}
+
+.cart_page .content {
+    display: grid;
+    grid-template-columns: 1.3fr 0.9fr;
+    gap: 50px;
+}
+
+.apply_code {
+    display: flex;
+    width: 100%;
+    margin-bottom: 32px;
+    background: #fff;
+    padding: 6px;
+    border-radius: 999px;
+    border: 1px solid rgba(9, 122, 110, 0.2);
+}
+
+.apply_code #code {
+    width: 66%;
+    padding: 12px 20px;
+    border: none;
+    background: transparent;
+    color: var(--text-dark);
+    font-size: 14px;
+    outline: none;
+}
+
+.apply_code button {
+    background-color: var(--primary-dark-forest);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    width: 34%;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.apply_code button:hover {
+    background-color: var(--primary-teal);
+}
+
+.summary_price {
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 24px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.05);
+}
+
+.summary_price div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+}
+
+.summary_price div:first-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.summary .checkout {
+    width: 100%;
+    background-color: var(--primary-dark-forest);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 54px;
+    cursor: pointer;
+    box-shadow: 0 12px 28px rgba(7, 59, 53, 0.25);
+    transition: all 0.35s ease !important;
+}
+
+.summary .checkout:hover {
+    background-color: var(--primary-teal);
+    transform: translateY(-3px);
+}
